@@ -9,7 +9,7 @@
         public string? Password{ get; set; }
         public string? EmailConfirmed { get; set; }
         public string? PasswordConfirmed { get; set; }
-        Location location { get; set; }
+        Location Location { get; set; }
         public int UserTypeID { get; set; }
     }
 }
