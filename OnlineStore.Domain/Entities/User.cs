@@ -1,6 +1,6 @@
 ﻿namespace OnlineStore.Domain.Entities
 {
-    public class User : BaseEntity 
+    public class Users : BaseEntity 
     {
         public string FirstName { get; set; }
         public string? MeddileName { get; set; }

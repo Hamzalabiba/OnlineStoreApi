@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineStore.Repstory.Repostory
+namespace OnlineStore.Service.CustomServices
 {
-    public interface IRepstory<T> where T : class 
+    public interface ICustomService<T> where T : class
     {
         IEnumerable<T> GetAll();
         T Get(int Id);
