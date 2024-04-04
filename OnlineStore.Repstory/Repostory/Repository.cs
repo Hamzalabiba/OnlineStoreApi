@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlineStore.Repstory.Repostory
 {
-    class Repository<T> : IRepstory<T> where T : BaseEntity
+    public class Repository<T> : IRepstory<T> where T : BaseEntity
     {
         #region Data Inatanstions
         private readonly ApplicationContext _context;
