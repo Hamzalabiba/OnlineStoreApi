@@ -11,7 +11,7 @@ namespace OnlineStore.Service.Product
 {
     public class CategoryService : ICustomService<Category>
     {
-        private readonly IRepstory<Category> _repstory;
+        private  IRepstory<Category> _repstory;
 
         public CategoryService(IRepstory<Category> repstory)
         {

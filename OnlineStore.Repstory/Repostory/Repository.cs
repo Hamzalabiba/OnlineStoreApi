@@ -19,6 +19,7 @@ namespace OnlineStore.Repstory.Repostory
         public Repository(ApplicationContext context)
         {
             _context = context;
+            _dbSet = _context.Set<T>();
         }
         #endregion
         #region Delete

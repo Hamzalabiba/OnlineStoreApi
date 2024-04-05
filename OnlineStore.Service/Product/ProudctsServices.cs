@@ -11,7 +11,7 @@ namespace OnlineStore.Service.Product
 {
     public class ProudctsServices : ICustomService<Products>
     {
-        private readonly IRepstory<Products> _repstory;
+        private IRepstory<Products> _repstory;
 
         public ProudctsServices(IRepstory<Products> repstory)
         {

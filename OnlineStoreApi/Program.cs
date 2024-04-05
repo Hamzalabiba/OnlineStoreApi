@@ -19,6 +19,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Depindancy Injection
+builder.Services.AddScoped(typeof(IRepstory<>), typeof(Repository<>));
+builder.Services.AddScoped<ICustomService<Users>, UserService>();
+builder.Services.AddScoped<ICustomService<UserType>, UserTypeServies>();
+builder.Services.AddScoped<ICustomService<Category>, CategoryService>();
+builder.Services.AddScoped<ICustomService<Products>, ProudctsServices>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,12 +34,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-//Depindancy Injection
-builder.Services.AddScoped(typeof(IRepstory<>), typeof(Repository<>));
-builder.Services.AddScoped<ICustomService<Users>, UserService>();
-builder.Services.AddScoped<ICustomService<UserType>, UserTypeServies>();
-builder.Services.AddScoped<ICustomService<Category>, CategoryService>();
-builder.Services.AddScoped<ICustomService<Products>, ProudctsServices>();
+
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

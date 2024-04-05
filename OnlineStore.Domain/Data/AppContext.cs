@@ -16,8 +16,8 @@ namespace OnlineStore.Domain.Data
             base.OnModelCreating(builder);
         }
         public DbSet<UserType> UserTypes { get; set; }
-        public DbSet<User> User { get; set; }
+        public DbSet<Users> User { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Products> Products { get; set; }
     }      
 }

@@ -11,7 +11,7 @@ namespace OnlineStore.Service.User
 {
     public class UserService : ICustomService<Users>
     {
-        private readonly IRepstory<Users> _repstory;
+        private  IRepstory<Users> _repstory;
 
         public UserService(IRepstory<Users> repstory)
         {
