@@ -32,7 +32,7 @@ namespace OnlineStore.Repstory.Repostory
         }
         #endregion
         #region Get 
-        public T Get(int Id)
+        public T GetById(int Id)
         {
             return _dbSet.SingleOrDefault(e => e.Id == Id);
         }

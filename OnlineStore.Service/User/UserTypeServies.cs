@@ -22,9 +22,9 @@ namespace OnlineStore.Service.User
             _repstory.Delete(entity);
         }
 
-        public UserType Get(int Id)
+        public UserType GetById(int Id)
         {
-            return _repstory.Get(Id);
+            return _repstory.GetById(Id);
         }
 
         public IEnumerable<UserType> GetAll()

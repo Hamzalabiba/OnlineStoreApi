@@ -23,9 +23,9 @@ namespace OnlineStore.Service.User
             _repstory.Delete(entity);
         }
 
-        public Users Get(int Id)
+        public Users GetById(int Id)
         {
-           return _repstory.Get(Id);
+           return _repstory.GetById(Id);
         }
 
         public IEnumerable<Users> GetAll()

@@ -23,9 +23,9 @@ namespace OnlineStore.Service.Product
             _repstory.Delete(entity);
         }
 
-        public Products Get(int Id)
+        public Products GetById(int Id)
         {
-            return _repstory.Get(Id);
+            return _repstory.GetById(Id);
         }
 
         public IEnumerable<Products> GetAll()
