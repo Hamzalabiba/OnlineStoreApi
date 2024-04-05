@@ -1,1 +1,1 @@
-# OnlineStoreApi On Cruds Operation Using Onion Architecture
+# OnlineStoreApi On Crud Operation Using Onion Architecture
